@@ -1,0 +1,70 @@
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe.config
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\bin\Debug\ListAndEditForm1.pdb
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.AssemblyReference.cache
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.Form1.resources
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.Properties.Resources.resources
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.GenerateResource.cache
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.CoreCompileInputs.cache
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.exe
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.pdb
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.MainForm01.resources
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.AddStudentForm.resources
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.studentsListForm.resources
+D:\Window Form\ListAndEditForm1\ListAndEditForm1\obj\Debug\ListAndEditForm1.UpdateDeleteStudentForm.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.AssemblyReference.cache
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.AddStudentForm.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.Form1.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.MainForm01.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.Properties.Resources.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.studentsListForm.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.UpdateDeleteStudentForm.resources
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.GenerateResource.cache
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.CoreCompileInputs.cache
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.exe
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.pdb
+D:\Window Form\StudentManagement\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe.config
+D:\Window Form\StudentManagement\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe
+D:\Window Form\StudentManagement\ListAndEditForm1\bin\Debug\ListAndEditForm1.pdb
+D:\Window Form\StudentManagement\ListAndEditForm1\obj\Debug\ListAndEditForm1.StatisticForm.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe.config
+D:\Window Form\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe
+D:\Window Form\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.pdb
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.AssemblyReference.cache
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.AddStudentForm.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Form1.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.MainForm01.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Properties.Resources.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.StatisticForm.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.studentsListForm.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.UpdateDeleteStudentForm.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.GenerateResource.cache
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.CoreCompileInputs.cache
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.exe
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.pdb
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Managestudentform.resources
+D:\Window Form\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Print.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.AssemblyReference.cache
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.CourseNScore.AddCourseForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.CourseNScore.EditCourseForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.CourseNScore.ManageCourseForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.CourseNScore.PrintForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.CourseNScore.RemoveCourseForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Score.AddScoreForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.AddStudentForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Form1.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.MainForm01.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Managestudentform.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Print.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Properties.Resources.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.StatisticForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.studentsListForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.UpdateDeleteStudentForm.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.GenerateResource.cache
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.CoreCompileInputs.cache
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.exe
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.pdb
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe.config
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.pdb
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Score.RemoveScore.resources
