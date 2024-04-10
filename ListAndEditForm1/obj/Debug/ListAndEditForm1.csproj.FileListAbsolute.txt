@@ -68,3 +68,4 @@ C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.ex
 C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.exe
 C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\bin\Debug\ListAndEditForm1.pdb
 C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.Score.RemoveScore.resources
+C:\Users\HALO\Desktop\ListandEdit\ListAndEditForm1\obj\Debug\ListAndEditForm1.csproj.ResolveComReference.cache

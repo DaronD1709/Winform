@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace ListAndEditForm1.CourseNScore
 {
@@ -51,6 +52,39 @@ namespace ListAndEditForm1.CourseNScore
 
         private void ImportFile_Click(object sender, EventArgs e)
         {
+            
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Filter = "Excel Files|*.xls;*.xlsx";
+            ofd.ShowDialog();
+            string filename = ofd.FileName;
+            Excel.Application exApp = new Excel.Application();
+            Excel.Workbook exBook = exApp.Workbooks.Open(filename);
+            Excel.Worksheet exSheet;
+            exSheet = exBook.Worksheets["Sheet1"];
+            Excel.Range exRange = exSheet.UsedRange;
+            if (filename != "")
+            {
+                for (int exRow = 2; exRow <= exRange.Rows.Count; exRow++)
+                {
+                    string email = exRange.Cells[exRow, 5].Text;
+                    if (exRange.Cells[exRow, 5].Text != "")
+                    {
+                        email = exRange.Cells[exRow, 2].Text + "@student.hcmute.edu.vn";
+                    }
+                    dataGridView1.Rows.Add(
+                                                  exRange.Cells[exRow, 1].Text,
+                                                  exRange.Cells[exRow, 2].Text,
+                                                  exRange.Cells[exRow, 3].Text,
+                                                  exRange.Cells[exRow, 4].Text,
+                                                  exRange.Cells[exRow, 5].Text,
+                                                  email
+                                                  );
+                }
+
+                exBook.Close(false);
+                exApp.Quit();
+            }
+
 
         }
     }

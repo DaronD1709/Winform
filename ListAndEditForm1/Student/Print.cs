@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Excel = Microsoft.Office.Interop.Excel;
 
 namespace ListAndEditForm1
 {
@@ -113,36 +114,40 @@ namespace ListAndEditForm1
 
         private void ButtonSaveFile_Click(object sender, EventArgs e)
         {
-            String path = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\student_list.txt";
-            using (var writer = new StreamWriter(path))
-            {
-                if(!File.Exists(path))
-                {
-                    File.Create(path);
-                }
-                DateTime bdate;
-                for(int i =0; i <dataGridView1.Rows.Count; i++)
-                {
-                    for ( int j =0; j<dataGridView1.Columns.Count - 1;j++)
-                    {
-                        if(j == 3)
-                        {
-                            bdate = Convert.ToDateTime(dataGridView1.Rows[i].Cells[j].Value.ToString());
-                            writer.Write("\t" + bdate.ToString("yyyy-MM-dd") + "\t" + "|");
+            ExportToExcel(dataGridView1);
+        }
 
-                        }
-                        else if (j == dataGridView1.Columns.Count -2 )
-                        {
-                            writer.Write("\t" + dataGridView1.Rows[i].Cells[j].Value.ToString());
-                        }
-                        else
-                        {
-                            writer.Write("\t" + dataGridView1.Rows[i].Cells[j].Value.ToString() + "\t" + "|");
-                        }
+        private void ExportToExcel(DataGridView dataGridView)
+        {
+            try
+            {
+                // Create a new Excel application
+                Excel.Application excelApp = new Excel.Application();
+                excelApp.Visible = true;
+
+                // Create a new workbook
+                Excel.Workbook excelWB = excelApp.Workbooks.Add("");
+                Excel._Worksheet excelWS = excelWB.ActiveSheet;
+
+                // Write DataGridView data to Excel
+                for (int i = 0; i < dataGridView.Rows.Count; i++)
+                {
+                    for (int j = 0; j < dataGridView.Columns.Count; j++)
+                    {
+                        excelWS.Cells[i + 1, j + 1] = dataGridView.Rows[i].Cells[j].Value?.ToString();
                     }
-                    writer.WriteLine("");
-                    writer.WriteLine("===============================================================================");
                 }
+
+                // Save the Excel file
+                excelWB.SaveCopyAs(@"C:\Users\HALO\Desktop\students_list.xlsx");
+                excelWB.Close();
+                excelApp.Quit();
+
+                MessageBox.Show("Data exported to Excel successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error exporting data to Excel: " + ex.Message);
             }
         }
 
