@@ -102,5 +102,25 @@ namespace ListAndEditForm1
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker dateTimePicker = sender as DateTimePicker;
+            string shortDate = dateTimePicker.Value.ToString("d");
+            dateTimePicker.Text = shortDate;
+        }
+
+        private void TextBoxPhone_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                if (!int.TryParse(textBox.Text, out _))
+                {
+                    MessageBox.Show("Invalid, please enter only number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
     }
 }

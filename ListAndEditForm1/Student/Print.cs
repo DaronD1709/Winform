@@ -145,5 +145,19 @@ namespace ListAndEditForm1
                 }
             }
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker dateTimePicker = sender as DateTimePicker;
+            string shortDate = dateTimePicker.Value.ToString("d");
+            dateTimePicker.Text = shortDate;
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker dateTimePicker = sender as DateTimePicker;
+            string shortDate = dateTimePicker.Value.ToString("d");
+            dateTimePicker.Text = shortDate;
+        }
     }
 }

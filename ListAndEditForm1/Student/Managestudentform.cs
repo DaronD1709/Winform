@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace ListAndEditForm1
 {
@@ -28,36 +29,35 @@ namespace ListAndEditForm1
 
         private void btRemove_Click(object sender, EventArgs e)
         {
-            try
+            int id = int.Parse(txtStudentID.Text);
+
+            // Tạo chuỗi kết nối
+            string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLSVDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                int studentID = Convert.ToInt32(txtStudentID.Text);
+                connection.Open();
 
-
-                //display a confirmation message before the delete 
-                if ((MessageBox.Show("Are You Sure You Want To Delete This Student", "Delete Student", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes))
+                // Tạo câu lệnh SQL để xóa sinh viên
+                string query = "DELETE FROM std WHERE id=@id";
+                using (SqlCommand command = new SqlCommand(query, connection))
                 {
-                    if (student.deleteStudent(studentID))
+                    command.Parameters.AddWithValue("@id", id);
+
+
+                    int rowsAffected = command.ExecuteNonQuery();
+
+                    if (rowsAffected > 0)
                     {
-                        MessageBox.Show("Student Deleted", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        fillGrid(new SqlCommand("SELECT * FROM std"));
-                        // clear/reset fields after delete
-                        txtStudentID.Text = "";
-                        TextBoxFname.Text =
-                        TextBoxLname.Text = "";
-                        TextBoxAddress.Text = "";
-                        TextBoxPhone.Text = "";
-                        dateTimePicker1.Value = DateTime.Now;
-                        PictureBoxStudentImage.Image = null;
+                        MessageBox.Show("Student removed successfully", "Remove Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        // Xóa dữ liệu hiển thị nếu cần
+                        //...
                     }
                     else
                     {
-                        MessageBox.Show("Student Not Deleted", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Error removing student", "Remove Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
-            }
-            catch
-            {
-                MessageBox.Show("Please Enter A Valid ID", "Delete Student", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -220,6 +220,91 @@ namespace ListAndEditForm1
         private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            DateTimePicker dateTimePicker = sender as DateTimePicker;
+            string shortDate = dateTimePicker.Value.ToString("d");
+            dateTimePicker.Text = shortDate;
+        }
+
+        private void TextBoxPhone_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                if (!int.TryParse(textBox.Text, out _))
+                {
+                    MessageBox.Show("Invalid, please enter only number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
+
+        private void txtStudentID_TextChanged(object sender, EventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (!string.IsNullOrEmpty(textBox.Text))
+            {
+                if (!int.TryParse(textBox.Text, out _))
+                {
+                    MessageBox.Show("Invalid, please enter only number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    textBox.Text = string.Empty;
+                }
+            }
+        }
+
+        private void btEdit_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtStudentID.Text))
+            {
+                int id = int.Parse(txtStudentID.Text);
+
+                // Tạo SqlCommand để cập nhật thông tin sinh viên dựa trên ID
+                SqlCommand updateCommand = new SqlCommand("UPDATE std SET fname = @fname, lname = @lname, bdate = @bdate, gender = @gender, phone = @phone, address = @address, picture = @picture WHERE id = @id");
+
+                updateCommand.Parameters.AddWithValue("@id", id);
+                updateCommand.Parameters.AddWithValue("@fname", TextBoxFname.Text);
+                updateCommand.Parameters.AddWithValue("@lname", TextBoxLname.Text);
+                updateCommand.Parameters.AddWithValue("@bdate", dateTimePicker1.Value);
+                updateCommand.Parameters.AddWithValue("@gender", rbuttonFemale.Checked ? "Female" : "Male");
+                updateCommand.Parameters.AddWithValue("@phone", TextBoxPhone.Text);
+                updateCommand.Parameters.AddWithValue("@address", TextBoxAddress.Text);
+
+                // Chuyển hình ảnh thành byte array để lưu trữ trong cơ sở dữ liệu
+                MemoryStream ms = new MemoryStream();
+                PictureBoxStudentImage.Image.Save(ms, PictureBoxStudentImage.Image.RawFormat);
+                byte[] picture = ms.ToArray();
+                updateCommand.Parameters.AddWithValue("@picture", picture);
+
+                // Thực hiện lệnh UPDATE trực tiếp từ đối tượng updateCommand
+                int result;
+
+                using (SqlConnection connection = new SqlConnection(@"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=QLSVDB;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False"))
+
+                {
+                    connection.Open();
+                    updateCommand.Connection = connection;
+
+                    // ExecuteNonQuery trả về số dòng bị ảnh hưởng
+                    result = updateCommand.ExecuteNonQuery();
+                }
+
+                // Kiểm tra và xử lý kết quả
+                if (result > 0)
+                {
+                    MessageBox.Show("Student information updated successfully!", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("Failed to update student information. ID not found.", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter the student ID to edit.", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
     }
 }

@@ -60,7 +60,7 @@
             this.label1.Location = new System.Drawing.Point(79, 45);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 28);
+            this.label1.Size = new System.Drawing.Size(67, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "StudentID:";
             // 
@@ -73,7 +73,7 @@
             this.label2.Location = new System.Drawing.Point(68, 116);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 28);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "First Name:";
             // 
@@ -86,7 +86,7 @@
             this.label3.Location = new System.Drawing.Point(71, 185);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 28);
+            this.label3.Size = new System.Drawing.Size(74, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
@@ -100,7 +100,7 @@
             this.label4.Location = new System.Drawing.Point(86, 254);
             this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 28);
+            this.label4.Size = new System.Drawing.Size(66, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "BirthDate:";
             // 
@@ -113,7 +113,7 @@
             this.label5.Location = new System.Drawing.Point(105, 330);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 28);
+            this.label5.Size = new System.Drawing.Size(56, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Gender:";
             // 
@@ -126,7 +126,7 @@
             this.label6.Location = new System.Drawing.Point(110, 386);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 28);
+            this.label6.Size = new System.Drawing.Size(50, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "Phone:";
             // 
@@ -139,7 +139,7 @@
             this.label7.Location = new System.Drawing.Point(98, 458);
             this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 28);
+            this.label7.Size = new System.Drawing.Size(64, 24);
             this.label7.TabIndex = 6;
             this.label7.Text = "Address:";
             // 
@@ -152,7 +152,7 @@
             this.label8.Location = new System.Drawing.Point(105, 521);
             this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 28);
+            this.label8.Size = new System.Drawing.Size(55, 24);
             this.label8.TabIndex = 7;
             this.label8.Text = "Picture:";
             // 
@@ -162,7 +162,7 @@
             this.TextBoxID.Location = new System.Drawing.Point(253, 48);
             this.TextBoxID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxID.Name = "TextBoxID";
-            this.TextBoxID.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxID.Size = new System.Drawing.Size(345, 27);
             this.TextBoxID.TabIndex = 8;
             // 
             // TextBoxFirstName
@@ -171,7 +171,7 @@
             this.TextBoxFirstName.Location = new System.Drawing.Point(253, 119);
             this.TextBoxFirstName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxFirstName.Name = "TextBoxFirstName";
-            this.TextBoxFirstName.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxFirstName.Size = new System.Drawing.Size(345, 27);
             this.TextBoxFirstName.TabIndex = 9;
             // 
             // TextBoxLastName
@@ -180,7 +180,7 @@
             this.TextBoxLastName.Location = new System.Drawing.Point(253, 188);
             this.TextBoxLastName.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxLastName.Name = "TextBoxLastName";
-            this.TextBoxLastName.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxLastName.Size = new System.Drawing.Size(345, 27);
             this.TextBoxLastName.TabIndex = 10;
             // 
             // TextBoxPhone
@@ -189,8 +189,9 @@
             this.TextBoxPhone.Location = new System.Drawing.Point(254, 386);
             this.TextBoxPhone.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxPhone.Name = "TextBoxPhone";
-            this.TextBoxPhone.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxPhone.Size = new System.Drawing.Size(345, 27);
             this.TextBoxPhone.TabIndex = 11;
+            this.TextBoxPhone.TextChanged += new System.EventHandler(this.TextBoxPhone_TextChanged);
             // 
             // TextBoxAddress
             // 
@@ -198,7 +199,7 @@
             this.TextBoxAddress.Location = new System.Drawing.Point(254, 458);
             this.TextBoxAddress.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.TextBoxAddress.Name = "TextBoxAddress";
-            this.TextBoxAddress.Size = new System.Drawing.Size(345, 31);
+            this.TextBoxAddress.Size = new System.Drawing.Size(345, 27);
             this.TextBoxAddress.TabIndex = 12;
             // 
             // dateTimePicker1
@@ -209,8 +210,9 @@
             this.dateTimePicker1.Location = new System.Drawing.Point(254, 254);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(344, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(344, 27);
             this.dateTimePicker1.TabIndex = 13;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // radioButton1
             // 
@@ -220,7 +222,7 @@
             this.radioButton1.Location = new System.Drawing.Point(284, 330);
             this.radioButton1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(67, 32);
+            this.radioButton1.Size = new System.Drawing.Size(55, 28);
             this.radioButton1.TabIndex = 14;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Male";
@@ -234,7 +236,7 @@
             this.radioButton2.Location = new System.Drawing.Point(471, 330);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(85, 32);
+            this.radioButton2.Size = new System.Drawing.Size(69, 28);
             this.radioButton2.TabIndex = 15;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Female";
@@ -294,7 +296,7 @@
             // 
             // AddStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkGray;
             this.ClientSize = new System.Drawing.Size(733, 829);

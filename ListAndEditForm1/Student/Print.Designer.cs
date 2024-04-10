@@ -51,9 +51,10 @@
             // 
             this.rButtonAll.AutoSize = true;
             this.rButtonAll.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rButtonAll.Location = new System.Drawing.Point(24, 35);
+            this.rButtonAll.Location = new System.Drawing.Point(18, 28);
+            this.rButtonAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rButtonAll.Name = "rButtonAll";
-            this.rButtonAll.Size = new System.Drawing.Size(45, 28);
+            this.rButtonAll.Size = new System.Drawing.Size(40, 24);
             this.rButtonAll.TabIndex = 0;
             this.rButtonAll.TabStop = true;
             this.rButtonAll.Text = "All";
@@ -63,9 +64,10 @@
             // 
             this.rButtonMale.AutoSize = true;
             this.rButtonMale.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rButtonMale.Location = new System.Drawing.Point(133, 35);
+            this.rButtonMale.Location = new System.Drawing.Point(100, 28);
+            this.rButtonMale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rButtonMale.Name = "rButtonMale";
-            this.rButtonMale.Size = new System.Drawing.Size(59, 28);
+            this.rButtonMale.Size = new System.Drawing.Size(50, 24);
             this.rButtonMale.TabIndex = 1;
             this.rButtonMale.TabStop = true;
             this.rButtonMale.Text = "Male";
@@ -75,9 +77,10 @@
             // 
             this.rButtonFemale.AutoSize = true;
             this.rButtonFemale.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rButtonFemale.Location = new System.Drawing.Point(242, 35);
+            this.rButtonFemale.Location = new System.Drawing.Point(182, 28);
+            this.rButtonFemale.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rButtonFemale.Name = "rButtonFemale";
-            this.rButtonFemale.Size = new System.Drawing.Size(72, 28);
+            this.rButtonFemale.Size = new System.Drawing.Size(62, 24);
             this.rButtonFemale.TabIndex = 2;
             this.rButtonFemale.TabStop = true;
             this.rButtonFemale.Text = "Female";
@@ -87,9 +90,10 @@
             // 
             this.rButtonYes.AutoSize = true;
             this.rButtonYes.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rButtonYes.Location = new System.Drawing.Point(533, 21);
+            this.rButtonYes.Location = new System.Drawing.Point(400, 17);
+            this.rButtonYes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rButtonYes.Name = "rButtonYes";
-            this.rButtonYes.Size = new System.Drawing.Size(53, 28);
+            this.rButtonYes.Size = new System.Drawing.Size(46, 24);
             this.rButtonYes.TabIndex = 3;
             this.rButtonYes.TabStop = true;
             this.rButtonYes.Text = "Yes";
@@ -100,9 +104,10 @@
             // 
             this.rButtonNo.AutoSize = true;
             this.rButtonNo.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rButtonNo.Location = new System.Drawing.Point(638, 21);
+            this.rButtonNo.Location = new System.Drawing.Point(478, 17);
+            this.rButtonNo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rButtonNo.Name = "rButtonNo";
-            this.rButtonNo.Size = new System.Drawing.Size(47, 28);
+            this.rButtonNo.Size = new System.Drawing.Size(40, 24);
             this.rButtonNo.TabIndex = 4;
             this.rButtonNo.TabStop = true;
             this.rButtonNo.Text = "No";
@@ -113,9 +118,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(358, 21);
+            this.label1.Location = new System.Drawing.Point(268, 17);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(109, 24);
+            this.label1.Size = new System.Drawing.Size(91, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "Use Date Range:";
             // 
@@ -123,9 +129,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(358, 63);
+            this.label2.Location = new System.Drawing.Point(268, 51);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 24);
+            this.label2.Size = new System.Drawing.Size(110, 20);
             this.label2.TabIndex = 6;
             this.label2.Text = "Birth Date Between:";
             // 
@@ -133,9 +140,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(635, 63);
+            this.label3.Location = new System.Drawing.Point(476, 51);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 24);
+            this.label3.Size = new System.Drawing.Size(27, 20);
             this.label3.TabIndex = 7;
             this.label3.Text = "and";
             // 
@@ -144,9 +152,10 @@
             this.ButtonCheck.BackColor = System.Drawing.Color.Red;
             this.ButtonCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonCheck.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonCheck.Location = new System.Drawing.Point(729, 17);
+            this.ButtonCheck.Location = new System.Drawing.Point(547, 14);
+            this.ButtonCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonCheck.Name = "ButtonCheck";
-            this.ButtonCheck.Size = new System.Drawing.Size(106, 36);
+            this.ButtonCheck.Size = new System.Drawing.Size(80, 29);
             this.ButtonCheck.TabIndex = 8;
             this.ButtonCheck.Text = "Check";
             this.ButtonCheck.UseVisualStyleBackColor = false;
@@ -157,9 +166,10 @@
             this.ButtonSaveFile.BackColor = System.Drawing.Color.RoyalBlue;
             this.ButtonSaveFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonSaveFile.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSaveFile.Location = new System.Drawing.Point(275, 509);
+            this.ButtonSaveFile.Location = new System.Drawing.Point(219, 414);
+            this.ButtonSaveFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonSaveFile.Name = "ButtonSaveFile";
-            this.ButtonSaveFile.Size = new System.Drawing.Size(173, 42);
+            this.ButtonSaveFile.Size = new System.Drawing.Size(128, 42);
             this.ButtonSaveFile.TabIndex = 9;
             this.ButtonSaveFile.Text = "Save to text file ";
             this.ButtonSaveFile.UseVisualStyleBackColor = false;
@@ -170,9 +180,10 @@
             this.ButtonPrinter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ButtonPrinter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonPrinter.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonPrinter.Location = new System.Drawing.Point(671, 509);
+            this.ButtonPrinter.Location = new System.Drawing.Point(503, 414);
+            this.ButtonPrinter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonPrinter.Name = "ButtonPrinter";
-            this.ButtonPrinter.Size = new System.Drawing.Size(173, 42);
+            this.ButtonPrinter.Size = new System.Drawing.Size(132, 42);
             this.ButtonPrinter.TabIndex = 10;
             this.ButtonPrinter.Text = "To Printer";
             this.ButtonPrinter.UseVisualStyleBackColor = false;
@@ -191,9 +202,11 @@
             this.groupBox1.Controls.Add(this.rButtonFemale);
             this.groupBox1.Controls.Add(this.rButtonMale);
             this.groupBox1.Controls.Add(this.rButtonAll);
-            this.groupBox1.Location = new System.Drawing.Point(49, 24);
+            this.groupBox1.Location = new System.Drawing.Point(37, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1028, 104);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(771, 84);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             // 
@@ -201,39 +214,45 @@
             // 
             this.dateTimePicker2.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(682, 63);
+            this.dateTimePicker2.Location = new System.Drawing.Point(512, 51);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(113, 29);
+            this.dateTimePicker2.Size = new System.Drawing.Size(86, 25);
             this.dateTimePicker2.TabIndex = 10;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // dateTimePicker1
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(505, 63);
+            this.dateTimePicker1.Location = new System.Drawing.Point(379, 51);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(111, 29);
+            this.dateTimePicker1.Size = new System.Drawing.Size(84, 25);
             this.dateTimePicker1.TabIndex = 9;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(49, 143);
+            this.dataGridView1.Location = new System.Drawing.Point(37, 116);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1027, 348);
+            this.dataGridView1.Size = new System.Drawing.Size(770, 283);
             this.dataGridView1.TabIndex = 12;
             // 
             // Print
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1245, 582);
+            this.ClientSize = new System.Drawing.Size(858, 473);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ButtonPrinter);
             this.Controls.Add(this.ButtonSaveFile);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Print";
             this.Text = "Print";
             this.Load += new System.EventHandler(this.Print_Load);
