@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Office.Interop.Excel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,7 @@ namespace ListAndEditForm1.CourseNScore
             InitializeComponent();
         }
         Student student = new Student();
+        private System.Data.DataTable dataTable;
 
         private void PrintForm_Load(object sender, EventArgs e)
         {
@@ -52,40 +54,67 @@ namespace ListAndEditForm1.CourseNScore
 
         private void ImportFile_Click(object sender, EventArgs e)
         {
-            
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Excel Files|*.xls;*.xlsx";
-            ofd.ShowDialog();
-            string filename = ofd.FileName;
-            Excel.Application exApp = new Excel.Application();
-            Excel.Workbook exBook = exApp.Workbooks.Open(filename);
-            Excel.Worksheet exSheet;
-            exSheet = exBook.Worksheets["Sheet1"];
-            Excel.Range exRange = exSheet.UsedRange;
-            if (filename != "")
+
+            ImportFromExcel();
+
+        }
+
+
+        private void ImportFromExcel()
+        {
+            try
             {
-                for (int exRow = 2; exRow <= exRange.Rows.Count; exRow++)
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Excel Files|*.xls;*.xlsx;*.xlsm";
+                openFileDialog.Title = "Select an Excel file";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    string email = exRange.Cells[exRow, 5].Text;
-                    if (exRange.Cells[exRow, 5].Text != "")
+                    string filePath = openFileDialog.FileName;
+
+                    // Create an Excel application
+                    Excel.Application excelApp = new Excel.Application();
+                    excelApp.Visible = false;
+
+                    // Open the selected Excel file
+                    Excel.Workbook excelWB = excelApp.Workbooks.Open(filePath);
+                    Excel._Worksheet excelWS = excelWB.Sheets[1];
+                    Excel.Range exRange = excelWS.UsedRange;
+
+                    // Create a DataTable to store the imported data
+                    dataTable = new System.Data.DataTable();
+
+                    // Add columns to the DataTable
+                    for (int col = 1; col <= exRange.Columns.Count; col++)
                     {
-                        email = exRange.Cells[exRow, 2].Text + "@student.hcmute.edu.vn";
+                        dataTable.Columns.Add("Column " + col);
                     }
-                    dataGridView1.Rows.Add(
-                                                  exRange.Cells[exRow, 1].Text,
-                                                  exRange.Cells[exRow, 2].Text,
-                                                  exRange.Cells[exRow, 3].Text,
-                                                  exRange.Cells[exRow, 4].Text,
-                                                  exRange.Cells[exRow, 5].Text,
-                                                  email
-                                                  );
+
+                    // Read data from Excel and populate DataTable
+                    for (int exRow = 2; exRow <= exRange.Rows.Count; exRow++)
+                    {
+                        DataRow newRow = dataTable.NewRow();
+                        for (int exCol = 1; exCol <= exRange.Columns.Count; exCol++)
+                        {
+                            newRow[exCol - 1] = exRange.Cells[exRow, exCol].Text;
+                        }
+                        dataTable.Rows.Add(newRow);
+                    }
+
+                    // Bind DataTable to DataGridView
+                    dataGridView1.DataSource = dataTable;
+
+                    // Close Excel
+                    excelWB.Close(false);
+                    excelApp.Quit();
+
+                    MessageBox.Show("Data imported from Excel successfully!");
                 }
-
-                exBook.Close(false);
-                exApp.Quit();
             }
-
-
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error importing data from Excel: " + ex.Message);
+            }
         }
     }
     }

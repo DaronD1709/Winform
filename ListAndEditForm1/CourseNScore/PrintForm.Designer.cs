@@ -39,9 +39,10 @@
             this.ImportFile.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ImportFile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ImportFile.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportFile.Location = new System.Drawing.Point(46, 520);
+            this.ImportFile.Location = new System.Drawing.Point(34, 422);
+            this.ImportFile.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ImportFile.Name = "ImportFile";
-            this.ImportFile.Size = new System.Drawing.Size(162, 55);
+            this.ImportFile.Size = new System.Drawing.Size(122, 45);
             this.ImportFile.TabIndex = 0;
             this.ImportFile.Text = "To File";
             this.ImportFile.UseVisualStyleBackColor = false;
@@ -52,9 +53,10 @@
             this.ButtonPrint.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ButtonPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ButtonPrint.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonPrint.Location = new System.Drawing.Point(252, 520);
+            this.ButtonPrint.Location = new System.Drawing.Point(189, 422);
+            this.ButtonPrint.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ButtonPrint.Name = "ButtonPrint";
-            this.ButtonPrint.Size = new System.Drawing.Size(162, 55);
+            this.ButtonPrint.Size = new System.Drawing.Size(122, 45);
             this.ButtonPrint.TabIndex = 1;
             this.ButtonPrint.Text = "Print";
             this.ButtonPrint.UseVisualStyleBackColor = false;
@@ -63,22 +65,24 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(24, 17);
+            this.dataGridView1.Location = new System.Drawing.Point(18, 14);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1015, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(764, 384);
             this.dataGridView1.TabIndex = 2;
             // 
             // PrintForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1057, 600);
+            this.ClientSize = new System.Drawing.Size(793, 488);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.ButtonPrint);
             this.Controls.Add(this.ImportFile);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "PrintForm";
             this.Text = "PrintForm";
             this.Load += new System.EventHandler(this.PrintForm_Load);

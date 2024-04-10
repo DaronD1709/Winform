@@ -63,7 +63,7 @@ namespace ListAndEditForm1
 
         private void btSearch_Click(object sender, EventArgs e)
         {
-            SqlCommand command = new SqlCommand("SELECT * FROM std WHERE CONCAT(fname,lname,address)LIKE '%" + textboxsearch.Text + "%'");
+            SqlCommand command = new SqlCommand("SELECT * FROM std WHERE CONCAT(id,fname,lname,address)LIKE '%" + textboxsearch.Text + "%'");
             fillGrid(command);
         }
         private void fillGrid(SqlCommand command)

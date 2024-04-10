@@ -52,6 +52,12 @@
     <Compile Include="CourseNScore\AddCourseForm.Designer.cs">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourseNScore\AddCourseFr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseNScore\AddCourseFr.Designer.cs">
+      <DependentUpon>AddCourseFr.cs</DependentUpon>
+    </Compile>
     <Compile Include="CourseNScore\Course.cs" />
     <Compile Include="CourseNScore\EditCourseForm.cs">
       <SubType>Form</SubType>
@@ -162,6 +168,9 @@
     </Compile>
     <EmbeddedResource Include="CourseNScore\AddCourseForm.resx">
       <DependentUpon>AddCourseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseNScore\AddCourseFr.resx">
+      <DependentUpon>AddCourseFr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CourseNScore\EditCourseForm.resx">
       <DependentUpon>EditCourseForm.cs</DependentUpon>

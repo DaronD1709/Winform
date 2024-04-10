@@ -48,6 +48,8 @@
             this.dtP = new System.Windows.Forms.DateTimePicker();
             this.rb_Male = new System.Windows.Forms.RadioButton();
             this.rb_Female = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picUp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +59,7 @@
             this.label1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(42, 52);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 28);
+            this.label1.Size = new System.Drawing.Size(25, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID:";
             // 
@@ -67,7 +69,7 @@
             this.label2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(42, 102);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 28);
+            this.label2.Size = new System.Drawing.Size(76, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "First Name:";
             // 
@@ -77,7 +79,7 @@
             this.label3.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(42, 147);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 28);
+            this.label3.Size = new System.Drawing.Size(74, 24);
             this.label3.TabIndex = 2;
             this.label3.Text = "Last Name:";
             // 
@@ -87,7 +89,7 @@
             this.label4.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(42, 193);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 28);
+            this.label4.Size = new System.Drawing.Size(70, 24);
             this.label4.TabIndex = 3;
             this.label4.Text = "Birth Date:";
             // 
@@ -97,7 +99,7 @@
             this.label5.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(42, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 28);
+            this.label5.Size = new System.Drawing.Size(56, 24);
             this.label5.TabIndex = 4;
             this.label5.Text = "Gender:";
             // 
@@ -107,7 +109,7 @@
             this.label6.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(42, 286);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 28);
+            this.label6.Size = new System.Drawing.Size(50, 24);
             this.label6.TabIndex = 5;
             this.label6.Text = "Phone:";
             // 
@@ -117,7 +119,7 @@
             this.label7.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(455, 59);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(80, 28);
+            this.label7.Size = new System.Drawing.Size(64, 24);
             this.label7.TabIndex = 6;
             this.label7.Text = "Address:";
             // 
@@ -127,7 +129,7 @@
             this.label8.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(463, 156);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 28);
+            this.label8.Size = new System.Drawing.Size(55, 24);
             this.label8.TabIndex = 7;
             this.label8.Text = "Picture:";
             // 
@@ -136,7 +138,7 @@
             this.tb_id.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_id.Location = new System.Drawing.Point(159, 55);
             this.tb_id.Name = "tb_id";
-            this.tb_id.Size = new System.Drawing.Size(130, 29);
+            this.tb_id.Size = new System.Drawing.Size(130, 25);
             this.tb_id.TabIndex = 8;
             // 
             // tb_fname
@@ -144,7 +146,7 @@
             this.tb_fname.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_fname.Location = new System.Drawing.Point(159, 101);
             this.tb_fname.Name = "tb_fname";
-            this.tb_fname.Size = new System.Drawing.Size(238, 29);
+            this.tb_fname.Size = new System.Drawing.Size(238, 25);
             this.tb_fname.TabIndex = 9;
             // 
             // tb_lname
@@ -152,7 +154,7 @@
             this.tb_lname.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_lname.Location = new System.Drawing.Point(159, 146);
             this.tb_lname.Name = "tb_lname";
-            this.tb_lname.Size = new System.Drawing.Size(238, 29);
+            this.tb_lname.Size = new System.Drawing.Size(238, 25);
             this.tb_lname.TabIndex = 10;
             // 
             // tb_Phone
@@ -160,7 +162,7 @@
             this.tb_Phone.Font = new System.Drawing.Font("Agency FB", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Phone.Location = new System.Drawing.Point(159, 288);
             this.tb_Phone.Name = "tb_Phone";
-            this.tb_Phone.Size = new System.Drawing.Size(238, 29);
+            this.tb_Phone.Size = new System.Drawing.Size(238, 25);
             this.tb_Phone.TabIndex = 11;
             // 
             // richtb_address
@@ -180,13 +182,14 @@
             this.picUp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picUp.TabIndex = 14;
             this.picUp.TabStop = false;
+            this.picUp.Click += new System.EventHandler(this.picUp_Click);
             // 
             // bt_Edit
             // 
             this.bt_Edit.BackColor = System.Drawing.Color.CornflowerBlue;
             this.bt_Edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Edit.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Edit.Location = new System.Drawing.Point(229, 358);
+            this.bt_Edit.Location = new System.Drawing.Point(159, 417);
             this.bt_Edit.Name = "bt_Edit";
             this.bt_Edit.Size = new System.Drawing.Size(137, 47);
             this.bt_Edit.TabIndex = 15;
@@ -199,7 +202,7 @@
             this.bt_Remove.BackColor = System.Drawing.Color.Crimson;
             this.bt_Remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bt_Remove.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bt_Remove.Location = new System.Drawing.Point(570, 358);
+            this.bt_Remove.Location = new System.Drawing.Point(385, 417);
             this.bt_Remove.Name = "bt_Remove";
             this.bt_Remove.Size = new System.Drawing.Size(137, 47);
             this.bt_Remove.TabIndex = 16;
@@ -224,7 +227,7 @@
             this.dtP.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtP.Location = new System.Drawing.Point(159, 190);
             this.dtP.Name = "dtP";
-            this.dtP.Size = new System.Drawing.Size(238, 31);
+            this.dtP.Size = new System.Drawing.Size(238, 27);
             this.dtP.TabIndex = 18;
             // 
             // rb_Male
@@ -233,7 +236,7 @@
             this.rb_Male.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_Male.Location = new System.Drawing.Point(159, 241);
             this.rb_Male.Name = "rb_Male";
-            this.rb_Male.Size = new System.Drawing.Size(67, 32);
+            this.rb_Male.Size = new System.Drawing.Size(55, 28);
             this.rb_Male.TabIndex = 19;
             this.rb_Male.TabStop = true;
             this.rb_Male.Text = "Male";
@@ -245,18 +248,46 @@
             this.rb_Female.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rb_Female.Location = new System.Drawing.Point(281, 241);
             this.rb_Female.Name = "rb_Female";
-            this.rb_Female.Size = new System.Drawing.Size(85, 32);
+            this.rb_Female.Size = new System.Drawing.Size(69, 28);
             this.rb_Female.TabIndex = 20;
             this.rb_Female.TabStop = true;
             this.rb_Female.Text = "Female";
             this.rb_Female.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Agency FB", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(557, 312);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(238, 40);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Upload Image";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Moccasin;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(613, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(137, 47);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Add Course";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // UpdateDeleteStudentForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(900, 450);
+            this.ClientSize = new System.Drawing.Size(900, 501);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.rb_Female);
             this.Controls.Add(this.rb_Male);
             this.Controls.Add(this.dtP);
@@ -309,5 +340,7 @@
         internal System.Windows.Forms.DateTimePicker dtP;
         internal System.Windows.Forms.RadioButton rb_Male;
         internal System.Windows.Forms.RadioButton rb_Female;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

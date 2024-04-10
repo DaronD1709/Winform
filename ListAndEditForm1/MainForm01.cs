@@ -40,25 +40,25 @@ namespace ListAndEditForm1
         private void staticsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             StatisticForm StdSF = new StatisticForm();
-            StdSF.Show(this);
+            StdSF.Show();
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Print print = new Print();
-            print.Show(this);
+            print.Show();
         }
 
         private void manageStudentFormToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Managestudentform mnsdf = new Managestudentform();
-            mnsdf.Show(this);
+            mnsdf.Show();
         }
 
         private void manageCourseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ManageCourseForm manageCourseForm = new ManageCourseForm();
-            manageCourseForm.Show(this);
+            manageCourseForm.Show( );
         }
 
         private void printToolStripMenuItem1_Click(object sender, EventArgs e)

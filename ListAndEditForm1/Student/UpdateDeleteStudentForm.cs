@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.AxHost;
 using System.Xml.Linq;
+using ListAndEditForm1.CourseNScore;
 
 namespace ListAndEditForm1
 {
@@ -151,6 +152,27 @@ namespace ListAndEditForm1
                     }
                 }
             }
+        }
+
+        private void picUp_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog opf = new OpenFileDialog();
+            opf.Filter = "Select Image(*.jpg;*.png;*.gif)|*.jpg;*.png;*.gif";
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+                picUp.Image = Image.FromFile(opf.FileName);
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddCourseFr addCourseFr = new AddCourseFr();
+            addCourseFr.Show(this);
         }
     }
 }

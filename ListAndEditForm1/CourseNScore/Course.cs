@@ -90,6 +90,15 @@ namespace ListAndEditForm1.CourseNScore
             return table;
         }
 
+        public DataTable getlabelCourses(string command)
+        {
+            SqlCommand cmd = new SqlCommand(command, mydb.getConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            return table;
+        }
+
         public DataTable getCourseById(int courseID)
         {
             SqlCommand command = new SqlCommand("SELECT * FROM Course WHERE id = @cid", mydb.getConnection);
