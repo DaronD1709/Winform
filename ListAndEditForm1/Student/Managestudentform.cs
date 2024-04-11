@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ListAndEditForm1.CourseNScore;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -305,6 +306,12 @@ namespace ListAndEditForm1
             {
                 MessageBox.Show("Please enter the student ID to edit.", "Edit Student", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void dataGridView1_DoubleClick_1(object sender, EventArgs e)
+        {
+            CourseStudentList upDacourse = new CourseStudentList();
+            upDacourse.Show();
         }
     }
 }

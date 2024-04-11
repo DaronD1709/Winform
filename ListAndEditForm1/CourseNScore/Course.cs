@@ -11,13 +11,14 @@ namespace ListAndEditForm1.CourseNScore
     internal class Course
     {
         MY_DB mydb = new MY_DB();
-        public bool insertCourse(int id,string courseName, int hourseNumber, string description)
+        public bool insertCourse(int id,string courseName, int hourseNumber, string description, int semes)
         {
-            SqlCommand command = new SqlCommand("INSERT INTO Course (id, label, period, description) VALUES (@id, @name, @hrs, @descr)", mydb.getConnection);
+            SqlCommand command = new SqlCommand("INSERT INTO Course (id, label, period, description, semester ) VALUES (@id, @name, @hrs, @descr, @semes)", mydb.getConnection);
             command.Parameters.Add("@id", SqlDbType.Int).Value = id;
             command.Parameters.Add("@name", SqlDbType.VarChar).Value = courseName;
             command.Parameters.Add("@hrs", SqlDbType.Int).Value = hourseNumber;
             command.Parameters.Add("@descr", SqlDbType.Text).Value = description;
+            command.Parameters.Add("@semes", SqlDbType.Int).Value = semes;
 
             mydb.openConnection();
             if (command.ExecuteNonQuery()==1)

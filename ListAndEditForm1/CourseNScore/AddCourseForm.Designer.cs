@@ -48,7 +48,7 @@
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(84, 88);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 26);
+            this.label1.Size = new System.Drawing.Size(109, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Course ID:";
             // 
@@ -59,7 +59,7 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(117, 169);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 26);
+            this.label2.Size = new System.Drawing.Size(66, 35);
             this.label2.TabIndex = 1;
             this.label2.Text = "Label:";
             // 
@@ -70,7 +70,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label3.Location = new System.Drawing.Point(107, 254);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 26);
+            this.label3.Size = new System.Drawing.Size(80, 35);
             this.label3.TabIndex = 2;
             this.label3.Text = "Period:";
             // 
@@ -81,7 +81,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(74, 334);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(95, 26);
+            this.label4.Size = new System.Drawing.Size(124, 35);
             this.label4.TabIndex = 3;
             this.label4.Text = "Description:";
             // 
@@ -104,7 +104,7 @@
             this.textboxCourseID.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxCourseID.Location = new System.Drawing.Point(228, 84);
             this.textboxCourseID.Name = "textboxCourseID";
-            this.textboxCourseID.Size = new System.Drawing.Size(236, 30);
+            this.textboxCourseID.Size = new System.Drawing.Size(236, 35);
             this.textboxCourseID.TabIndex = 9;
             // 
             // textboxCourseName
@@ -112,7 +112,7 @@
             this.textboxCourseName.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textboxCourseName.Location = new System.Drawing.Point(228, 165);
             this.textboxCourseName.Name = "textboxCourseName";
-            this.textboxCourseName.Size = new System.Drawing.Size(236, 30);
+            this.textboxCourseName.Size = new System.Drawing.Size(236, 35);
             this.textboxCourseName.TabIndex = 10;
             // 
             // textHour
@@ -120,7 +120,7 @@
             this.textHour.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textHour.Location = new System.Drawing.Point(228, 250);
             this.textHour.Name = "textHour";
-            this.textHour.Size = new System.Drawing.Size(236, 30);
+            this.textHour.Size = new System.Drawing.Size(236, 35);
             this.textHour.TabIndex = 11;
             // 
             // TextBoxDescription
@@ -140,7 +140,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label5.Location = new System.Drawing.Point(522, 88);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 26);
+            this.label5.Size = new System.Drawing.Size(109, 35);
             this.label5.TabIndex = 13;
             this.label5.Text = "Semester:";
             // 
@@ -148,14 +148,18 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Agency FB", 13.8F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(627, 84);
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.comboBox1.Location = new System.Drawing.Point(637, 84);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(127, 30);
+            this.comboBox1.Size = new System.Drawing.Size(127, 36);
             this.comboBox1.TabIndex = 14;
             // 
             // AddCourseForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 18F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
             this.ClientSize = new System.Drawing.Size(840, 619);

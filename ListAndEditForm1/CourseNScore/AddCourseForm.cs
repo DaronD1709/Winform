@@ -28,6 +28,7 @@ namespace ListAndEditForm1.CourseNScore
             string name = textboxCourseName.Text;
             int hrs = Convert.ToInt32(textHour.Text);
             string descr = TextBoxDescription.Text;
+            int semes = (int)comboBox1.SelectedValue;
 
             Course course = new Course();
 
@@ -37,7 +38,7 @@ namespace ListAndEditForm1.CourseNScore
             }
             else if (course.checkCourseName(name))
             {
-                if (course.insertCourse(Cid, name, hrs, descr))
+                if (course.insertCourse(Cid, name, hrs, descr, semes))
                 {
                     MessageBox.Show("New Course Inserted", "Add Course", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
